@@ -11,15 +11,15 @@
 
     <title>VICE App - The Future is Happening</title>
 
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
     <!-- Bootstrap Core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../css/landing-page.css" rel="stylesheet">
+    <link href="css/landing-page.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="ont-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -44,19 +44,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="#"><img src="../img/Vice_Icon_small.png" style="margin-top: -15px;"></a>
+                <a class="navbar-brand topnav" href="#"><img src="img/Vice_Icon_small.png" style="margin-top: -15px;"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left">
                     <li>
-                        <a href="../index.html#intro">App</a>
+                        <a href="index.html#intro">App</a>
                     </li>
                     <li>
-                        <a href="#register">Register</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
+                        <a href="merchant/register.html">Register</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -64,7 +61,7 @@
                         <a href="#">EN</a>
                     </li>
                     <li>
-                        <a href="register_vn.html">VN</a>
+                        <a href="#">VN</a>
                     </li>
                 </ul>
             </div>
@@ -81,47 +78,46 @@
 
             <div class="row">
                 <div class="col-lg-12">
-                        <h1><img src="../img/Vice_Icon_Large.png" style="display: inline-block;" class="img-responsive"> App</h1>
+                        <h1><img src="img/Vice_Icon_Large.png" style="display: inline-block;" class="img-responsive"> App</h1>
                         <h3>The Future is Happening</h3>
                         <hr class="intro-divider">
-                        <h2>Thank you for trusting us!</h2>
+                        <h2>Sign in Vice Merchant Portal</h2>
                 </div>
             </div>
 
         </div>
         <!-- /.container -->
-
     </div>
     <!-- /.intro-header -->
 
     <!-- Page Content -->
-    <a name="register"></a>
-    <div class="jumbotron">
-        <div class="container">
-        <h3 style="text-align: center;"> <i class="fa fa-thumbs-up"></i> Registration Successful ! </h3>
-            <div class="row">
-            <div class="col-sm-4 col-sm-offset-4">
-            <p align="center">Your account is almost ready, before you can access it, your credentials will be reviewed by our Operation team.</p>
-            <p align="center">You will be notified on the e-mail you provided as "username" when your account is ready!</p>
-            <p align="center">This is a simple formality to ensure you are really who you are!</p>
-            </div>
-            </div>
-        </div>
-    </div>
-    <!-- /.content-section-a -->
-
-    <a name="contact"></a>
+    <a name="sign-in"></a>
     <div class="content-section-a">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-sm-offset-4">
-                    <p> Need Help? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="mailto:ngoc@vice.cool" class="btn btn-default btn-md"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">E-mail Sales Department</span></a> </p>
-                </div>
+    <div class="container">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="username" class="col-sm-4 control-label">Username</label>
+            <div class="col-sm-4">
+              <input type="email" class="form-control" id="username" placeholder="Username@mybrand.com">
             </div>
-        </div>   
-     </div> 
-        <!-- /.container -->
+          </div>
+          <div class="form-group">
+            <label for="password" class="col-sm-4 control-label">Password</label>
+            <div class="col-sm-4">
+              <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+          </div>
+            <div class="col-xs-offset-6 col-xs-6">
+            <!-- Success should sign in the merchant in the merchant-admin , temporary <a> links placed for example, standard should be 
+            <button type="submit" class="btn btn-success">Next</button> and form should really submit to db
+            -->
+              <a href="register2.html" target="_self" class="btn btn-success">Sign In</a>
+            </div>
+          </div>
+        </form>
+    </div>
+	</div>
+    <!-- /.content-section-a -->
 
     <!-- Footer -->
     <footer>
@@ -130,11 +126,11 @@
                 <div class="col-lg-12">
                     <ul class="list-inline">
                         <li>
-                            <a href="../index.html#intro">App</a>
+                            <a href="index.html#intro">App</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#register">Register</a>
+                            <a href="merchant/register.html">Register</a>
                         </li>
                     </ul>
                     <p class="copyright text-muted small">Copyright &copy; VICE App 2014. All Rights Reserved</p>
@@ -144,10 +140,10 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="../js/jquery.js"></script>
+    <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
