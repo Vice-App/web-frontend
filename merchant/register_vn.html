@@ -28,7 +28,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body>
@@ -78,59 +77,264 @@
     <a name="intro"></a>
     <div class="intro-header-registration">
         <div class="container">
-
             <div class="row">
                 <div class="col-lg-12">
                         <h1><img src="../img/Vice_Icon_Large.png" style="display: inline-block;" class="img-responsive"> App</h1>
                         <h3>The Future is Happening</h3>
                         <hr class="intro-divider">
+                        <h3>Đăng ký với VICE</h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-2 col-sm-offset-3"><h4> 1. Thông tin tài khoản<h4></div>
-                <div class="col-sm-2"><h4 class="sec-in"> 2. Thông tin cơ bản</h4></div>
-                <div class="col-sm-2"><h4 class="sec-in"> 3. Thông tin thanh toán</h4></div>
-            </div>
-
         </div>
-        <!-- /.container -->
     </div>
     <!-- /.intro-header -->
 
     <!-- Page Content -->
     <a name="register"></a>
-    <div class="content-section-a">
-    <div class="container">
-        <form class="form-horizontal">
-          <div class="form-group">
-            <label for="username" class="col-sm-4 control-label">Tên đăng nhập</label>
-            <div class="col-sm-5">
-              <input type="text" class="form-control" id="username" placeholder="Tên đăng nhập">
+<!-- ######### BEGIN #################-->
+    <div class="container" id="register_wizard">
+        <!-- Start Register Nav-->
+        <div class="row">
+           <div class="col-sm-6 col-sm-offset-3">
+           <div class="progress">
+             <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="5" style="width: 33%;">
+               Step 1 of 4
+             </div>
+           </div>
+           </div>
+        </div>
+        
+        <div class="row hidden-xs">           
+                <a href="#step1" data-toggle="tab" data-step="1"><div class="col-sm-2 col-sm-offset-2 coolnav">
+                    <span class="fa fa-user" style="font-size: 40px;padding-top: 5px;"></span><p>Tài khoản NCC</p>
+                </div></a>
+                <a href="#step2" data-toggle="tab" data-step="2"><div class="col-sm-2 coolnav">
+                    <span class="fa fa-building-o" style="font-size: 40px;padding-top: 5px;"></span><p>Thông tin Công ty</p>
+                </div></a>
+                <a href="#step3" data-toggle="tab" data-step="3"><div class="col-sm-2 coolnav">
+                    <span class="fa fa-refresh" style="font-size: 40px;padding-top: 5px;"></span><p>Chi tiết hoàn vốn</p>
+                </div></a>
+                <a href="#step4" data-toggle="tab" data-step="4"><div class="col-sm-2 coolnav">
+                    <span class="fa fa-dollar" style="font-size: 40px;padding-top: 5px;"></span><p>Thông tin thanh toán</p>
+                </div></a>
+        </div>
+        <!-- End Register Nav-->
+
+<div class="tab-content">
+<!-- ## STEP 1 ## User Info-->   
+    <div class="tab-pane fade in active" id="step1">         
+        <div class="well">
+
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="first_name" class="col-sm-4 control-label">Tên riêng</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" id="first_name" placeholder="Lam">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="last_name" class="col-sm-4 control-label">Tên họ</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" id="last_name" placeholder="Tran">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="mobile" class="col-sm-4 control-label">Sô điện thoại di động</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" id="mobile" placeholder="+84 000000000">
+                </div>
+              </div>
+              <hr style="border-color: #B8B8B8; width: 50%;">
+              <div class="form-group">
+                <label for="username" class="col-sm-4 control-label">Tên đăng nhập (e-mail)</label>
+                <div class="col-sm-5">
+                  <input type="email" class="form-control" id="username" placeholder="tranlam@mybrand.com">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="password" class="col-sm-4 control-label">Password</label>
+                <div class="col-sm-5">
+                  <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+              </div>
+               <div class="form-group">
+                <label for="password-check" class="col-sm-4 control-label">Nhập lại  Password</label>
+                <div class="col-sm-5">
+                  <input type="password" class="form-control" id="password-check" placeholder="Password">
+                </div>
+              </div>
+            </form>
+
+        </div>
+            <div class="col-md-12 text-center" style="padding-bottom: 20px;">
+            <a class="btn btn-primary next" href="#">Tiếp</a>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="password" class="col-sm-4 control-label">Password</label>
-            <div class="col-sm-5">
-              <input type="password" class="form-control" id="password" placeholder="Password">
-            </div>
-          </div>
-           <div class="form-group">
-            <label for="password-check" class="col-sm-4 control-label">Nhập lại Password</label>
-            <div class="col-sm-5">
-              <input type="password" class="form-control" id="password-check" placeholder="Password">
-            </div>
-          </div>
-            <div class="col-xs-offset-6 col-xs-6">
-            <!-- Success should lead to next page, temporary <a> links placed for example, standard should be 
-            <button type="submit" class="btn btn-success">Next</button> and form should really submit to db
-            -->
-              <a href="register2_vn.html" target="_self" class="btn btn-success">Tiếp</a>
-            </div>
-          </div>
-        </form>
     </div>
-	</div>
-    <!-- /.content-section-a -->
+<!-- ## STEP 2 ## Company Info-->
+    <div class="tab-pane fade" id="step2">
+         <div class="well"> 
+          
+             <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="company_legal" class="col-sm-4 control-label">Tên đối tác</label>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" id="company_legal" placeholder="Cong Ty TNHH ...">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="company_com" class="col-sm-4 control-label">Tên thương hiệu</label>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" id="company_com" placeholder="i.e Brand Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="company_tax" class="col-sm-4 control-label">Mã số thuế</label>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" id="company_tax" placeholder="000 00000 00">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="company_phone" class="col-sm-4 control-label">Số ĐT</label>
+                    <div class="col-sm-5">
+                      <input type="tel" class="form-control" id="company_phone" placeholder="+84 000000000">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-4 control-label">Địa chỉ:</label>
+                    <div class="col-sm-5">
+                         <div class="form-group row">
+                            <label for="address_nbr" class="col-sm-1 control-label">Số</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="address_nbr" placeholder="000/bis">
+                            </div>
+                            <label for="address_street" class="col-sm-2 control-label">Đường</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="address_street" placeholder="Điện Biên Phủ">
+                            </div>
+                         </div>
+                         <div class="form-group row">
+                            <label for="address_ward" class="col-sm-1 control-label">P.</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="address_ward" placeholder="12">
+                            </div>
+                            <label for="address_district" class="col-sm-2 control-label">Q.</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="address_district" placeholder="Quận 4/[Thu Duc]">
+                            </div>
+                         </div>
+                         <div class="form-group row">
+                            <label for="address_city" class="col-sm-1 control-label">TP.</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="address_city" placeholder="TP. Hồ Chí Minh">
+                            </div>
+                            <label for="address_other" class="col-sm-2 control-label">Điạ chỉ khác</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="address_other" placeholder="Tầng 12a">
+                            </div>
+                         </div>
+                    </div>
+                  </div>
+             </form>
+            
+         </div>
+             <div class="col-md-12 text-center" style="padding-bottom: 20px;">
+             <a class="btn btn-primary next" href="#">Tiếp</a>
+             </div>
+    </div>
+<!-- ## STEP 3 ## Payment Info-->     
+    <div class="tab-pane fade" id="step3">
+            <div class="well well-sm center-block">
+                    <p style="text-align: center">When you launch a campaign where users are required to make a purchase on Vice App, we need to send you the money back.<br> This is done by bank transfer to the account you provide here, every 15 calendar days.</p>
+            </div>
+        <div class="well">
+
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="col-sm-4 control-label">Tài khoản ngân hàng của công ty</label>
+
+                <div class="col-sm-8">
+                     <div class="form-group row">
+                        <label for="account_number" class="col-sm-2 control-label">Số TK</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="address_nbr" placeholder="000 000 000 000">
+                        </div>
+                        <label for="account_owner" class="col-sm-2 control-label">Chủ TK</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="account_owner" placeholder="i.e Vice App Pte Ltd">
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label for="bank_name" class="col-sm-2 control-label">Tên Ngân Hàng</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="bank_name" placeholder="Sacombank">
+                        </div>
+                        <label for="bank_city" class="col-sm-2 control-label">Thành Phố</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="bank_city" placeholder="i.e Ho Chi Minh City">
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label for="bank_branch" class="col-sm-2 control-label">Chi nhánh</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="bank_branch" placeholder="CN: Quận 1">
+                        </div>
+                     </div>
+                </div>
+
+              </div>
+            </form>
+
+            <div class="col-md-12 text-center" style="padding-bottom: 20px;">
+            <a class="btn btn-primary next" href="#">Tiếp</a>
+            </div>
+        </div>
+    </div>
+<!--## STEP 4 ## Payment Info 2 -->
+    <div class="tab-pane fade" id="step4">
+                <div class="well well-sm center-block">
+                    <p style="text-align: center;">When you launch a campaign where users are required to redeem a Vice Code, Vice App will charge 100 codes upfront and every 100 codes thereafter . This is done by Direct Debit.</p>
+                    <p style="text-align: center;">The card information is processed directly by <a href="http://www.cybersource.com/products/payment_security/secure_acceptance_silent_order_post/" target="_blank"> CyberSource Inc.</a> a Visa Inc. company. We never store or hold your information on our servers.</p>
+                </div>   
+        <div class="well">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="col-sm-4 control-label">Thanh Toán Trực Tiếp</label>
+
+                <div class="col-sm-8">
+                 <div class="form-group row">
+                    <label for="card_info" class="col-sm-2 control-label">Thông tin thẻ</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="card_info" placeholder="i.e Vice App Pte Ltd">
+                    </div>
+                    <label for="card_exp_date" class="col-sm-2 control-label">Ngày hết hạn:</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="card_exp_date" placeholder="10/17 [MM/YY]">
+                    </div>
+                 </div>
+                 <div class="form-group row">
+                    <label for="card_number" class="col-sm-2 control-label">Số thẻ</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="card_number" placeholder="0000 0000 0000 0000">
+                        <span id="helpBlock" class="help-block">VISA / Mastercard</span>
+                    </div>
+                    <label for="card_ccv" class="col-sm-2 control-label">CCV</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="card_ccv" placeholder="111">
+                    </div>
+                 </div>
+                </div>
+
+              </div>
+            </form>
+            <div class="col-md-12 text-center" style="padding-bottom: 20px;">
+            <a class="btn btn-success" href="reg_finish.html">Hoàn thành</a>
+            </div>
+        </div>
+    </div>
+<!-- End of Steps -->
+</div>
+<!-- ######### END of Content -->
+</div>
 
     <a name="contact"></a>
     <div class="content-section-a">
@@ -170,6 +374,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Registration Page Progress JavaScript -->
+    <script src="../js/regprog.js"></script>
 
 </body>
 

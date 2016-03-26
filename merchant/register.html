@@ -28,7 +28,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body>
@@ -78,59 +77,264 @@
     <a name="intro"></a>
     <div class="intro-header-registration">
         <div class="container">
-
             <div class="row">
                 <div class="col-lg-12">
                         <h1><img src="../img/Vice_Icon_Large.png" style="display: inline-block;" class="img-responsive"> App</h1>
                         <h3>The Future is Happening</h3>
                         <hr class="intro-divider">
+                        <h3>Sign Up with VICE</h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-2 col-sm-offset-3"><h4> 1. User Info<h4></div>
-                <div class="col-sm-2"><h4 class="sec-in"> 2. Company Info </h4></div>
-                <div class="col-sm-2"><h4 class="sec-in"> 3. Payment Info</h4></div>
-            </div>
-
         </div>
-        <!-- /.container -->
     </div>
     <!-- /.intro-header -->
 
     <!-- Page Content -->
     <a name="register"></a>
-    <div class="content-section-a">
-    <div class="container">
-        <form class="form-horizontal">
-          <div class="form-group">
-            <label for="username" class="col-sm-4 control-label">Username</label>
-            <div class="col-sm-5">
-              <input type="email" class="form-control" id="username" placeholder="Username@mybrand.com">
+<!-- ######### BEGIN #################-->
+    <div class="container" id="register_wizard">
+        <!-- Start Register Nav-->
+        <div class="row">
+           <div class="col-sm-6 col-sm-offset-3">
+           <div class="progress">
+             <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="5" style="width: 33%;">
+               Step 1 of 4
+             </div>
+           </div>
+           </div>
+        </div>
+        
+        <div class="row hidden-xs">           
+                <a href="#step1" data-toggle="tab" data-step="1"><div class="col-sm-2 col-sm-offset-2 coolnav">
+                    <span class="fa fa-user" style="font-size: 40px;padding-top: 5px;"></span><p>Vice Merchant Account</p>
+                </div></a>
+                <a href="#step2" data-toggle="tab" data-step="2"><div class="col-sm-2 coolnav">
+                    <span class="fa fa-pencil" style="font-size: 40px;padding-top: 5px;"></span><p>Business Profile</p>
+                </div></a>
+                <a href="#step3" data-toggle="tab" data-step="3"><div class="col-sm-2 coolnav">
+                    <span class="fa fa-refresh" style="font-size: 40px;padding-top: 5px;"></span><p>Payback Details</p>
+                </div></a>
+                <a href="#step4" data-toggle="tab" data-step="4"><div class="col-sm-2 coolnav">
+                    <span class="fa fa-dollar" style="font-size: 40px;padding-top: 5px;"></span><p>Payment</p>
+                </div></a>
+        </div>
+        <!-- End Register Nav-->
+
+<div class="tab-content">
+<!-- ## STEP 1 ## User Info-->   
+    <div class="tab-pane fade in active" id="step1">         
+        <div class="well">
+
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="first_name" class="col-sm-4 control-label">First Name</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" id="first_name" placeholder="Harvey">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="last_name" class="col-sm-4 control-label">Last Name</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" id="last_name" placeholder="Specter">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="mobile" class="col-sm-4 control-label">Mobile Phone</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" id="mobile" placeholder="+84 000000000">
+                </div>
+              </div>
+              <hr style="border-color: #B8B8B8; width: 50%;">
+              <div class="form-group">
+                <label for="username" class="col-sm-4 control-label">Username (e-mail)</label>
+                <div class="col-sm-5">
+                  <input type="email" class="form-control" id="username" placeholder="Username@mybrand.com">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="password" class="col-sm-4 control-label">Password</label>
+                <div class="col-sm-5">
+                  <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+              </div>
+               <div class="form-group">
+                <label for="password-check" class="col-sm-4 control-label">Re-write Password</label>
+                <div class="col-sm-5">
+                  <input type="password" class="form-control" id="password-check" placeholder="Password">
+                </div>
+              </div>
+            </form>
+
+        </div>
+            <div class="col-md-12 text-center" style="padding-bottom: 20px;">
+            <a class="btn btn-primary next" href="#">Continue</a>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="password" class="col-sm-4 control-label">Password</label>
-            <div class="col-sm-5">
-              <input type="password" class="form-control" id="password" placeholder="Password">
-            </div>
-          </div>
-           <div class="form-group">
-            <label for="password-check" class="col-sm-4 control-label">Re-write Password</label>
-            <div class="col-sm-5">
-              <input type="password" class="form-control" id="password-check" placeholder="Password">
-            </div>
-          </div>
-            <div class="col-xs-offset-6 col-xs-6">
-            <!-- Success should lead to next page, temporary <a> links placed for example, standard should be 
-            <button type="submit" class="btn btn-success">Next</button> and form should really submit to db
-            -->
-              <a href="register2.html" target="_self" class="btn btn-success">Next</a>
-            </div>
-          </div>
-        </form>
     </div>
-	</div>
-    <!-- /.content-section-a -->
+<!-- ## STEP 2 ## Company Info-->
+    <div class="tab-pane fade" id="step2">
+         <div class="well"> 
+          
+             <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="company_legal" class="col-sm-4 control-label">Company Name</label>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" id="company_legal" placeholder="Company Legal Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="company_com" class="col-sm-4 control-label">Commercial Name</label>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" id="company_com" placeholder="i.e Brand Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="company_tax" class="col-sm-4 control-label">Tax Code</label>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" id="company_tax" placeholder="000 00000 00">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="company_phone" class="col-sm-4 control-label">Phone Number</label>
+                    <div class="col-sm-5">
+                      <input type="tel" class="form-control" id="company_phone" placeholder="+84 000000000">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-4 control-label">Address:</label>
+                    <div class="col-sm-5">
+                         <div class="form-group row">
+                            <label for="address_nbr" class="col-sm-1 control-label">No.</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="address_nbr" placeholder="000/bis">
+                            </div>
+                            <label for="address_street" class="col-sm-1 control-label">Street</label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" id="address_street" placeholder="Dien Bien Phu Street">
+                            </div>
+                         </div>
+                         <div class="form-group row">
+                            <label for="address_ward" class="col-sm-1 control-label">Ward</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="address_ward" placeholder="12">
+                            </div>
+                            <label for="address_district" class="col-sm-2 control-label">District</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="address_district" placeholder="[4]/[Thu Duc]">
+                            </div>
+                         </div>
+                         <div class="form-group row">
+                            <label for="address_city" class="col-sm-1 control-label">City</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="address_city" placeholder="Ho Chi Minh City">
+                            </div>
+                            <label for="address_other" class="col-sm-2 control-label">Other</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="address_other" placeholder="12th Floor">
+                            </div>
+                         </div>
+                    </div>
+                  </div>
+             </form>
+            
+         </div>
+             <div class="col-md-12 text-center" style="padding-bottom: 20px;">
+             <a class="btn btn-primary next" href="#">Continue</a>
+             </div>
+    </div>
+<!-- ## STEP 3 ## Payment Info-->     
+    <div class="tab-pane fade" id="step3">
+            <div class="well well-sm center-block">
+                    <p style="text-align: center">When you launch a campaign where users are required to make a purchase on Vice App, we need to send you the money back.<br> This is done by bank transfer to the account you provide here, every 15 calendar days.</p>
+            </div>
+        <div class="well">
+
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="col-sm-4 control-label">Company Bank Account</label>
+
+                <div class="col-sm-8">
+                     <div class="form-group row">
+                        <label for="account_number" class="col-sm-2 control-label">Account Number</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="address_nbr" placeholder="000 000 000 000">
+                        </div>
+                        <label for="account_owner" class="col-sm-2 control-label">Account Owner</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="account_owner" placeholder="i.e Vice App Pte Ltd">
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label for="bank_name" class="col-sm-2 control-label">Bank Name</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="bank_name" placeholder="Sacombank">
+                        </div>
+                        <label for="bank_city" class="col-sm-2 control-label">City</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="bank_city" placeholder="i.e Ho Chi Minh City">
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label for="bank_branch" class="col-sm-2 control-label">Branch</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="bank_branch" placeholder="i.e District 1">
+                        </div>
+                     </div>
+                </div>
+
+              </div>
+            </form>
+
+            <div class="col-md-12 text-center" style="padding-bottom: 20px;">
+            <a class="btn btn-primary next" href="#">Continue</a>
+            </div>
+        </div>
+    </div>
+<!--## STEP 4 ## Payment Info 2 -->
+    <div class="tab-pane fade" id="step4">
+                <div class="well well-sm center-block">
+                    <p style="text-align: center;">When you launch a campaign where users are required to redeem a Vice Code, Vice App will charge 100 codes upfront and every 100 codes thereafter . This is done by Direct Debit.</p>
+                    <p style="text-align: center;">The card information is processed directly by <a href="http://www.cybersource.com/products/payment_security/secure_acceptance_silent_order_post/" target="_blank"> CyberSource Inc.</a> a Visa Inc. company. We never store or hold your information on our servers.</p>
+                </div>   
+        <div class="well">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="col-sm-4 control-label">Card information</label>
+
+                <div class="col-sm-8">
+                 <div class="form-group row">
+                    <label for="card_info" class="col-sm-2 control-label">Name on Card</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="card_info" placeholder="i.e Vice App Pte Ltd">
+                    </div>
+                    <label for="card_exp_date" class="col-sm-2 control-label">Expiration Date</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="card_exp_date" placeholder="10/17 [MM/YY]">
+                    </div>
+                 </div>
+                 <div class="form-group row">
+                    <label for="card_number" class="col-sm-2 control-label">Card Number</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="card_number" placeholder="0000 0000 0000 0000">
+                        <span id="helpBlock" class="help-block">VISA / Mastercard</span>
+                    </div>
+                    <label for="card_ccv" class="col-sm-2 control-label">CCV</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="card_ccv" placeholder="111">
+                    </div>
+                 </div>
+                </div>
+
+              </div>
+            </form>
+            <div class="col-md-12 text-center" style="padding-bottom: 20px;">
+            <a class="btn btn-success" href="reg_finish.html">Finish</a>
+            </div>
+        </div>
+    </div>
+<!-- End of Steps -->
+</div>
+<!-- ######### END of Content -->
+</div>
 
     <a name="contact"></a>
     <div class="content-section-a">
@@ -170,6 +374,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Registration Page Progress JavaScript -->
+    <script src="../js/regprog.js"></script>
 
 </body>
 
