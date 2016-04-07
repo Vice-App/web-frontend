@@ -40,7 +40,7 @@ h6 {
 }
 .intro-header-registration {
     padding-top: 50px; 
-    padding-bottom: 50px;
+    padding-bottom: 25px;
     text-align: center;
     color: #303030;
 }
@@ -192,4 +192,33 @@ p.copyright {
 }
 .sec-in {
     color:#B8B8B8;
+}
+
+.coolnav {
+    background-color: #fff;
+    color:#313184;
+    border: 1px solid #C0C0C0;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+.coolnav:hover {
+    color: #fff;
+    background-color:#313184;
+    vertical-align: central;
+}
+.btn-primary {background-color: #313184;}
+@media (min-width: 768px) and (max-width: 1200px) {
+    .coolnav {min-height: 100px}
+}
+.progress-bar-success {
+    background-color: #313184;
+}
+.privacypolicy {
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-weight: normal;
 }

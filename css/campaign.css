@@ -1,0 +1,108 @@
+/* Campaign Page CSS */
+a .anchor {
+    position: relative;
+    font-weight: 100;
+    font-style: normal;
+    color: #ffffff;
+}
+a:hover {
+    text-decoration: none;
+}
+.brand_display {
+    display: block;
+    margin: auto;
+    padding-top: 10%;
+    max-width: 200px;
+    vertical-align: center;
+}
+.brand_display_w{
+    height: 112px;
+}
+.campaign-intro {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: rgb(32,32,87);
+    background: -moz-linear-gradient(top, rgb(32,32,87) 0%, rgb(49,49,132) 100%);
+    background: -webkit-linear-gradient(top, rgb(32,32,87) 0%,rgb(49,49,132) 100%);
+    background: linear-gradient(to bottom, rgb(32,32,87) 0%,rgb(49,49,132) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#202057', endColorstr='#313184',GradientType=0 );
+}
+.campaign-item {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+.campaign-item_p {
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    height: 100px;
+}
+.campaign-item .fa {
+    font-size: 80px;
+}
+.campaign-item_icon:hover {
+    color: #9090f1;
+    vertical-align: central;
+    font-size: 90px;
+}
+.campaign-item_title {
+    position: relative;
+    font-size: 35px;
+    line-height: 44px;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 5px 0 50px;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+.campaign-item_title:hover {
+    color: #7f7fae;
+    font-weight: 400;
+    text-decoration: none !important;
+}
+.campaign-item_title::after {
+    position: absolute;
+    display: block;
+    width: 125px;
+    height: 3px;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -62px;
+    content: "";
+    background: #eeeeee;
+}
+@media (max-width: 1200px){
+    .campaign-item_title {font-size: 30px;}
+}
+
+.campaign-item::after {
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    right: -1px;
+    content: "";
+    opacity: 0.3;
+    background: #eeeeee;
+}
+.campaign-content_title {
+    position: relative;
+    font-size: 35px;
+    line-height: 44px;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 5px 0 20px;
+    text-align: center;
+}
+.content_spacer {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.text-vice {
+    color: #313184;
+}
