@@ -103,6 +103,13 @@ a:hover {
     padding-top: 100px;
     padding-bottom: 150px;
 }
+h2.contact {
+    color: #313184;
+    padding-bottom: 30px;
+}
+textarea.contact {
+    min-height: 180px;
+}
 .text-vice {
     color: #313184;
 }
